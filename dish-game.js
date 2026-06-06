@@ -13,6 +13,7 @@ const gameOverModal = document.getElementById('game-over-modal');
 const resultTitle = document.getElementById('result-title');
 const resultMessage = document.getElementById('result-message');
 const resultDish = document.getElementById('result-dish');
+const dishNameLabel = document.getElementById('dish-name-label');
 const resultFunFact = document.getElementById('result-fun-fact');
 const resultBoxes = document.getElementById('result-boxes');
 const shareBtn = document.getElementById('share-btn');
@@ -103,11 +104,12 @@ function initializeGame() {
 // Render the UI
 function renderUI() {
   // Update puzzle number
-  puzzleNumber.textContent = `Puzzle #${gameState.puzzleNumber}`;
+  puzzleNumber.textContent = 'Guess the country based on the national dish shown below';
 
   // Display dish image
   dishImage.src = gameState.targetCountry.imageUrl;
   dishImage.alt = `National dish of ${gameState.targetCountry.name}`;
+  dishNameLabel.textContent = gameState.targetCountry.dish;
 
   // Render guess history
   renderGuessHistory();

@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d0b0 100%);
     padding: 20px;
 }
 
@@ -52,6 +52,20 @@ h1 {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#dish-name-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-size: 0.85em;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
 }
 
 #dish-image {
@@ -89,12 +103,12 @@ h1 {
 }
 
 #country-input:hover:not(:disabled) {
-    border-color: #667eea;
+    border-color: #b07c4f;
 }
 
 #country-input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #b07c4f;
 }
 
 #country-input:disabled {
@@ -108,7 +122,7 @@ h1 {
     left: 0;
     right: 0;
     background: white;
-    border: 2px solid #667eea;
+    border: 2px solid #b07c4f;
     border-top: none;
     border-radius: 0 0 10px 10px;
     max-height: 200px;
@@ -130,7 +144,7 @@ h1 {
 
 .suggestion-item:hover,
 .suggestion-item.selected {
-    background-color: #f0f0ff;
+    background-color: #fdf0e4;
 }
 
 .suggestion-item:last-child {
@@ -141,7 +155,7 @@ h1 {
     width: 100%;
     padding: 15px 40px;
     font-size: 1.1em;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #c8956c 0%, #a0704a 100%);
     color: white;
     border: none;
     border-radius: 10px;
@@ -233,7 +247,7 @@ h1 {
 }
 
 .direction {
-    color: #667eea;
+    color: #b07c4f;
     font-size: 1em;
     min-width: 30px;
 }
@@ -308,13 +322,13 @@ h1 {
 }
 
 #result-dish {
-    color: #667eea;
+    color: #b07c4f;
     font-weight: 600;
 }
 
 #result-fun-fact {
-    background: #f0f4ff;
-    border-left: 3px solid #667eea;
+    background: #fdf0e4;
+    border-left: 3px solid #b07c4f;
     border-radius: 6px;
     padding: 10px 14px;
     font-size: 0.9em;
@@ -350,7 +364,7 @@ h1 {
 }
 
 #share-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #c8956c 0%, #a0704a 100%);
     color: white;
 }
 
