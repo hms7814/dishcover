@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "country": "Italy",
+    "dish": "Ragu alla Bolognese",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Rag%C3%B9_alla_bolognese_-_03.jpg/640px-Rag%C3%B9_alla_bolognese_-_03.jpg"
+  },
+  {
+    "id": 2,
+    "country": "Japan",
+    "dish": "Curry Rice",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/japan/curry_rice_1.jpg"
+  },
+  {
+    "id": 3,
+    "country": "France",
+    "dish": "Pot-au-Feu",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/france/pot-au-feu_1.jpg"
+  },
+  {
+    "id": 4,
+    "country": "Mexico",
+    "dish": "Mole",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/mexico/mole_1.jpg"
+  },
+  {
+    "id": 5,
+    "country": "India",
+    "dish": "Khichdi",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/india/khichdi_1.jpg"
+  },
+  {
+    "id": 6,
+    "country": "Brazil",
+    "dish": "Feijoada",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Feijoada_001.jpg/640px-Feijoada_001.jpg"
+  },
+  {
+    "id": 7,
+    "country": "Thailand",
+    "dish": "Pad Thai",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/thailand/pad_thai_1.jpg"
+  },
+  {
+    "id": 8,
+    "country": "Spain",
+    "dish": "Paella",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/spain/paella_1.jpg"
+  },
+  {
+    "id": 9,
+    "country": "Greece",
+    "dish": "Moussaka",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/greece/moussaka_1.jpg"
+  },
+  {
+    "id": 10,
+    "country": "China",
+    "dish": "Peking Roast Duck",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Peking_Duck%2C_2014_%2802%29.jpg/640px-Peking_Duck%2C_2014_%2802%29.jpg"
+  },
+  {
+    "id": 11,
+    "country": "Peru",
+    "dish": "Ceviche",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/peru/ceviche_1.jpg"
+  },
+  {
+    "id": 12,
+    "country": "Vietnam",
+    "dish": "Pho",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/vietnam/pho_1.jpg"
+  },
+  {
+    "id": 13,
+    "country": "United States",
+    "dish": "Hamburger",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/usa/hamburger_1.jpg"
+  },
+  {
+    "id": 14,
+    "country": "Argentina",
+    "dish": "Asados",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/argentina/asados_1.jpg"
+  },
+  {
+    "id": 15,
+    "country": "South Korea",
+    "dish": "Kimchi",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/south_korea/kimchi_1.jpg"
+  },
+  {
+    "id": 16,
+    "country": "Germany",
+    "dish": "Sauerbraten",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sauerbraten.JPG/640px-Sauerbraten.JPG"
+  },
+  {
+    "id": 17,
+    "country": "Australia",
+    "dish": "Roast Lamb",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Roast_lamb_2.jpg/640px-Roast_lamb_2.jpg"
+  },
+  {
+    "id": 18,
+    "country": "Norway",
+    "dish": "Fårikål",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Farikal2.jpg/640px-Farikal2.jpg"
+  },
+  {
+    "id": 19,
+    "country": "Canada",
+    "dish": "Poutine",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/canada/poutine_1.jpg"
+  },
+  {
+    "id": 20,
+    "country": "Russia",
+    "dish": "Pelmeni",
+    "imageUrl": "https://raw.githubusercontent.com/hms7814/dish-game/main/russia/pelmeni_1.jpg"
+  }
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishcover - Country Guessing Game</title>
+    <link rel="stylesheet" href="dish-game.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DISHCOVER</h1>
+            <p id="puzzle-number">Puzzle #1</p>
+        </header>
+
+        <section class="dish-section">
+            <div class="image-container">
+                <img id="dish-image" src="" alt="National dish">
+            </div>
+        </section>
+
+        <section class="guess-section">
+            <label for="country-input">Guess the country:</label>
+            <div class="autocomplete-container">
+                <input
+                    type="text"
+                    id="country-input"
+                    placeholder="Start typing a country name..."
+                    autocomplete="off"
+                >
+                <div id="suggestions" class="suggestions hidden"></div>
+            </div>
+            <button id="guess-btn">GUESS</button>
+        </section>
+
+        <section class="history-section">
+            <h2>Guesses (<span id="guess-count">0</span>/6)</h2>
+            <div id="guess-history"></div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stats-summary">
+                <span>Played: <strong id="games-played">0</strong></span>
+                <span>Won: <strong id="games-won">0</strong></span>
+                <span>Streak: <strong id="current-streak">0</strong></span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="result-title"></h2>
+            <p id="result-message"></p>
+            <p id="result-dish"></p>
+            <p id="result-fun-fact" class="hidden"></p>
+            <div id="result-boxes" class="hidden"></div>
+            <div class="modal-buttons">
+                <button id="share-btn">Share Results</button>
+                <button id="close-modal-btn">Close</button>
+            </div>
+            <p id="share-feedback" class="hidden"></p>
+        </div>
+    </div>
+
+    <script src="countries-data.js"></script>
+    <script src="dish-game.js"></script>
+</body>
+</html>
