@@ -263,6 +263,22 @@ h1 {
     border-top: 2px solid #e0e0e0;
 }
 
+.attribution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.75em;
+    color: #999;
+}
+
+.attribution a {
+    color: #b07c4f;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
 .stats-summary {
     display: flex;
     justify-content: space-around;
