@@ -411,7 +411,7 @@ function seededShuffle(array, seed) {
 function getDailyPuzzle(date) {
   const seed = dateToSeed(date);
   const shuffled = seededShuffle(COUNTRIES_DATABASE, seed);
-  const dailyCountries = shuffled.slice(0, 20);
+  const dailyCountries = shuffled;
 
   // Use a different seed calculation for target selection
   const targetSeed = (seed * 7919) % dailyCountries.length;
