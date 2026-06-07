@@ -186,8 +186,6 @@ h1 {
 
 #guess-history {
     min-height: 50px;
-    max-height: 300px;
-    overflow-y: auto;
 }
 
 .guess-item {

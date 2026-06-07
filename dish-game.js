@@ -166,15 +166,19 @@ function handleGuess() {
   }
 
   const gameCountry = COUNTRIES_DATABASE.find(c => c.name.toLowerCase() === selectedCountry.name.toLowerCase());
-  if (!gameCountry) {
-    alert(`${selectedCountry.name} isn't in the game yet — only our 40 featured countries are playable!`);
-    countryInput.value = '';
-    selectedCountry = null;
-    hideSuggestions();
-    return;
+  if (gameCountry) {
+    selectedCountry = gameCountry;
+  } else {
+    const coords = COUNTRY_COORDINATES[selectedCountry.name];
+    if (!coords) {
+      alert(`Sorry, we don't have location data for ${selectedCountry.name} yet.`);
+      countryInput.value = '';
+      selectedCountry = null;
+      hideSuggestions();
+      return;
+    }
+    selectedCountry = { id: selectedCountry.name, name: selectedCountry.name, coordinates: coords };
   }
-
-  selectedCountry = gameCountry;
 
   // Check if already guessed
   if (gameState.guesses.some(g => g.countryId === selectedCountry.id)) {
