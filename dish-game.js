@@ -165,6 +165,17 @@ function handleGuess() {
     return;
   }
 
+  const gameCountry = COUNTRIES_DATABASE.find(c => c.name.toLowerCase() === selectedCountry.name.toLowerCase());
+  if (!gameCountry) {
+    alert(`${selectedCountry.name} isn't in the game yet — only our 40 featured countries are playable!`);
+    countryInput.value = '';
+    selectedCountry = null;
+    hideSuggestions();
+    return;
+  }
+
+  selectedCountry = gameCountry;
+
   // Check if already guessed
   if (gameState.guesses.some(g => g.countryId === selectedCountry.id)) {
     alert('You already guessed this country!');
@@ -392,14 +403,12 @@ function updateStatsDisplay() {
 
 // Autocomplete functions
 function filterCountries(searchText) {
-  if (!searchText) {
-    return [];
-  }
-
+  if (!searchText) return [];
   const lowerSearch = searchText.toLowerCase();
-  return gameState.availableCountries
-    .filter(country => country.name.toLowerCase().includes(lowerSearch))
-    .sort((a, b) => a.name.localeCompare(b.name));
+  return ALL_COUNTRIES
+    .filter(name => name.toLowerCase().includes(lowerSearch))
+    .sort((a, b) => a.localeCompare(b))
+    .map(name => ({ name }));
 }
 
 function showSuggestions(countries) {
